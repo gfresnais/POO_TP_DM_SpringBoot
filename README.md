@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/gfresnais/POO_TP_DM_SpringBoot.svg?token=5K17HmxMpZcxFUnn27Gu&branch=master)](https://travis-ci.com/gfresnais/POO_TP_DM_SpringBoot)
+
 ====================
     DEPENDENCIES 
 ====================
