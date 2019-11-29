@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/gfresnais/POO_TP_DM_SpringBoot.svg?token=5K17HmxMpZcxFUnn27Gu&branch=master)](https://travis-ci.com/gfresnais/POO_TP_DM_SpringBoot)
+[![Build Status](https://travis-ci.com/gfresnais/POO_TP_DM_SpringBoot.svg?token=5K17HmxMpZcxFUnn27Gu&branch=master)](https://travis-ci.com/gfresnais/POO_TP_DM_SpringBoot) [![Maintainability](https://api.codeclimate.com/v1/badges/a8e53cb3dee738ce134f/maintainability)](https://codeclimate.com/github/gfresnais/POO_TP_DM_SpringBoot/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/a8e53cb3dee738ce134f/test_coverage)](https://codeclimate.com/github/gfresnais/POO_TP_DM_SpringBoot/test_coverage) [![Documentation Status](https://readthedocs.org/projects/poo-tp-dm-springboot/badge/?version=latest)](https://poo-tp-dm-springboot.readthedocs.io/en/latest/?badge=latest)
 
 ====================
     DEPENDENCIES 
