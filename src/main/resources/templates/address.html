@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Recherche d'adresse</title>
+    <link href="webjars/bootstrap/4.3.1/css/bootstrap.min.css"
+          rel="stylesheet">
+</head>
+<body>
+    <nav th:insert="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>
+
+    <h1>Recherche d'adresse</h1>
+
+    <form action="/meteo" method="post">
+        <fieldset>
+            <label for="address">Entrez une adresse :</label>
+            <input type="text" name="address" id="address">
+        </fieldset>
+        <input type="submit">
+    </form>
+</body>
+</html>

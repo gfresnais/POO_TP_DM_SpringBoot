@@ -1,13 +1,15 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Blog</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8">
+    <title>Météo</title>
     <link href="webjars/bootstrap/4.3.1/css/bootstrap.min.css"
           rel="stylesheet">
 </head>
 <body>
     <nav th:insert="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>
-    <p th:text="'Bonjour ' + ${nomTemplate} + ' !'" />
+    <h1>La météo d'une adresse</h1>
+    <p th:text="${search}"></p>
+    <p th:text="${city}"></p>
 </body>
 </html>
