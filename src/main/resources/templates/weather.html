@@ -9,7 +9,28 @@
 <body>
     <nav th:insert="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>
     <h1>La météo d'une adresse</h1>
-    <p th:text="${search}"></p>
-    <p th:text="${city}"></p>
+    <section>
+        <h2>Votre recherche</h2>
+        <p th:text="${search}"></p>
+    </section>
+
+    <section>
+        <h2>Label</h2>
+        <p th:text="${label}"></p>
+    </section>
+
+    <section>
+        <h2>Context</h2>
+        <p th:text="${context}"></p>
+    </section>
+
+    <section>
+        <h2>La météo de cette recherche</h2>
+        <p th:text="${time}"></p>
+        <p th:text="${humidity}"></p>
+        <p th:text="${temperature}"></p>
+        <p th:text="${summary}"></p>
+    </section>
+
 </body>
 </html>

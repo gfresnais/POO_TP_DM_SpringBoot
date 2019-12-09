@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.com/gfresnais/POO_TP_DM_SpringBoot.svg?token=5K17HmxMpZcxFUnn27Gu&branch=master)](https://travis-ci.com/gfresnais/POO_TP_DM_SpringBoot) [![Maintainability](https://api.codeclimate.com/v1/badges/a8e53cb3dee738ce134f/maintainability)](https://codeclimate.com/github/gfresnais/POO_TP_DM_SpringBoot/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/a8e53cb3dee738ce134f/test_coverage)](https://codeclimate.com/github/gfresnais/POO_TP_DM_SpringBoot/test_coverage) [![Documentation Status](https://readthedocs.org/projects/poo-tp-dm-springboot/badge/?version=latest)](https://poo-tp-dm-springboot.readthedocs.io/en/latest/?badge=latest)
 
+https://github.com/gfresnais/POO_TP_DM_SpringBoot
+
 Première partie du DM
 =====================
 
@@ -71,4 +73,28 @@ PostMapping : permet de récupérer des informations via une requête POST
 Ici je récupère la valeur que j'ai entré dans le champ "address" grâce à @RequestParam
 
 <h2>ÉTAPE 3</h2>
-J'ai dû créer 4 classes afin de parser le JSON de la GeoAPI : GeoRequest, Feature, Geometry et GeoAdresse
+J'ai dû créer 4 classes afin de parser le JSON de la GeoAPI : 
+- GeoRequest : L'objet de base renvoyé par la requête
+- Feature : Contient les informations de l'adresse ainsi que ses coordonnées
+- Geometry : les coordonnées géographiques de l'adresse
+- Properties : les informations de l'adresse comme la rue, le département etc.
+
+<h2>ÉTAPE 5</h2>
+J'ai dû créer 7 classes afin de parser le JSON de la DarkSkyAPI :
+- Weather : L'objet de base renvoyé par la requête
+- Currently : La météo actuelle
+- Hourly : La météo par heure
+- Datum : Les informations de la météo par heure
+- Daily : La météo par jour
+- DatumDay : Les informations de la météo par jour
+- Alert : Les informations d'alertes sur une région géographique
+- Flags : Les différentes informations liées à l'utilisation de l'API comme les unités utilisées
+
+<h2>ÉTAPE 6</h2>
+- Oui il faut une clé API pour utiliser DarkSky, la formule de base est limité à 1000 appels par jour
+- L'URL est la suivante https://api.darksky.net/forecast/CLE_API_DU_COMPTE/COORDS_LON,COORDS_LAT
+- On utilise la méthode HTTP GET pour utiliser l'API
+- On passe les paramètres d'appel avec un ?NOM_PARAM=VALEUR et on les concatène avec &
+- Les informations suivantes se situent dans :
+    - Température : Dans la section currently et l'attribut temperature
+    - Prévision :  Dans la section currently et l'attribut summary
