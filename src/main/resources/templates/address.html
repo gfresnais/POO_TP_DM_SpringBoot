@@ -8,15 +8,16 @@
 </head>
 <body>
     <nav th:insert="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>
+    <div class="container">
+        <h1 class="text-center">Recherche d'adresse</h1>
 
-    <h1>Recherche d'adresse</h1>
-
-    <form action="/meteo" method="post">
-        <fieldset>
-            <label for="address">Entrez une adresse :</label>
-            <input type="text" name="address" id="address">
-        </fieldset>
-        <input type="submit">
-    </form>
+        <form action="/meteo" method="post" class="form-inline">
+            <div class="form-group">
+                <label for="address">Entrez une adresse :</label>
+                <input type="text" class="form-control" name="address" id="address">
+            </div>
+            <input type="submit" class="btn btn-primary">
+        </form>
+    </div>
 </body>
 </html>

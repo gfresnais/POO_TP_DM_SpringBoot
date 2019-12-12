@@ -40,7 +40,6 @@ public class MeteoController {
 
         model.addAttribute("search", search);
         model.addAttribute("label", properties.getLabel());
-        model.addAttribute("context", properties.getContext());
 
         List<Double> coords = geometry.getCoordinates();
 
@@ -50,7 +49,6 @@ public class MeteoController {
 
         Currently currently = weather.getCurrently();
 
-        model.addAttribute("time", LocalDate.now() + " " + LocalTime.now());
         model.addAttribute("humidity", currently.getHumidity());
         model.addAttribute("temperature", currently.getTemperature());
         model.addAttribute("summary", currently.getSummary());

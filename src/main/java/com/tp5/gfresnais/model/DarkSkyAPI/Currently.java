@@ -1,9 +1,6 @@
 
 package com.tp5.gfresnais.model.DarkSkyAPI;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class Currently {
 
     private Integer time;
@@ -24,7 +21,6 @@ public class Currently {
     private Integer uvIndex;
     private Double visibility;
     private Double ozone;
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     public Integer getTime() {
         return time;
@@ -169,13 +165,4 @@ public class Currently {
     public void setOzone(Double ozone) {
         this.ozone = ozone;
     }
-
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
-    }
-
 }

@@ -1,9 +1,7 @@
 
 package com.tp5.gfresnais.model.DarkSkyAPI;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class Alert {
 
@@ -14,7 +12,6 @@ public class Alert {
     private Integer expires;
     private String description;
     private String uri;
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     public String getTitle() {
         return title;
@@ -71,13 +68,4 @@ public class Alert {
     public void setUri(String uri) {
         this.uri = uri;
     }
-
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
-    }
-
 }

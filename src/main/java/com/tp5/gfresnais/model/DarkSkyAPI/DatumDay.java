@@ -1,9 +1,6 @@
 
 package com.tp5.gfresnais.model.DarkSkyAPI;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class DatumDay {
 
     private Integer time;
@@ -45,7 +42,6 @@ public class DatumDay {
     private Integer apparentTemperatureMinTime;
     private Double apparentTemperatureMax;
     private Integer apparentTemperatureMaxTime;
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     public Integer getTime() {
         return time;
@@ -358,13 +354,4 @@ public class DatumDay {
     public void setApparentTemperatureMaxTime(Integer apparentTemperatureMaxTime) {
         this.apparentTemperatureMaxTime = apparentTemperatureMaxTime;
     }
-
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
-    }
-
 }

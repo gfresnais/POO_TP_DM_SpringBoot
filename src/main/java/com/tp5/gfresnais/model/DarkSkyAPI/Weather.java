@@ -1,9 +1,7 @@
 
 package com.tp5.gfresnais.model.DarkSkyAPI;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class Weather {
 
@@ -16,7 +14,6 @@ public class Weather {
     private List<Alert> alerts = null;
     private Flags flags;
     private Integer offset;
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     public Double getLatitude() {
         return latitude;
@@ -89,13 +86,4 @@ public class Weather {
     public void setOffset(Integer offset) {
         this.offset = offset;
     }
-
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
-    }
-
 }
