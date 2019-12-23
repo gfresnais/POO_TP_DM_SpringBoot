@@ -49,7 +49,7 @@ public class MeteoController {
 
         Currently currently = weather.getCurrently();
 
-        model.addAttribute("humidity", currently.getHumidity());
+        model.addAttribute("humidity", currently.getHumidity() * 100);
         model.addAttribute("temperature", currently.getTemperature());
         model.addAttribute("summary", currently.getSummary());
 

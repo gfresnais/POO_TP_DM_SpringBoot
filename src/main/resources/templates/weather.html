@@ -11,10 +11,10 @@
         <div class="container">
             <h1 class="text-center" th:text="'La météo de ' + ${label}"></h1>
             <div>
-                <ul class="list-inline">
-                    <li class="list-inline-item" th:text="'Humidité : ' + ${humidity}"></li>
-                    <li class="list-inline-item" th:text="${temperature} + ' °C'"></li>
-                    <li class="list-inline-item" th:text="${summary}"></li>
+                <ul class="list-group list-group-flush text-center">
+                    <li class="list-group-item" th:text="'Taux d\'humidité : ' + ${humidity} + ' %'"></li>
+                    <li class="list-group-item" th:text="'Température : ' + ${temperature} + ' °C'"></li>
+                    <li class="list-group-item" th:text="${summary}"></li>
                 </ul>
             </div>
         </div>
